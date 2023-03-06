@@ -4,14 +4,14 @@
     "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList\\MyProductList.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList\\MyProductList.csproj": {
+    "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Base\\MyProductList.Base.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList\\MyProductList.csproj",
-        "projectName": "MyProductList",
-        "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList\\MyProductList.csproj",
+        "projectUniqueName": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Base\\MyProductList.Base.csproj",
+        "projectName": "MyProductList.Base",
+        "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Base\\MyProductList.Base.csproj",
         "packagesPath": "C:\\Users\\Duhan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList\\obj\\",
+        "outputPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Base\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Duhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,7 +39,369 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Data\\MyProductList.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Data\\MyProductList.Data.csproj",
+        "projectName": "MyProductList.Data",
+        "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Data\\MyProductList.Data.csproj",
+        "packagesPath": "C:\\Users\\Duhan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Duhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Base\\MyProductList.Base.csproj": {
+                "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Base\\MyProductList.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.19.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Dto\\MyProductList.Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Dto\\MyProductList.Dto.csproj",
+        "projectName": "MyProductList.Dto",
+        "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Dto\\MyProductList.Dto.csproj",
+        "packagesPath": "C:\\Users\\Duhan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Duhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Base\\MyProductList.Base.csproj": {
+                "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Base\\MyProductList.Base.csproj"
+              },
+              "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Data\\MyProductList.Data.csproj": {
+                "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Data\\MyProductList.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Service\\MyProductList.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Service\\MyProductList.Service.csproj",
+        "projectName": "MyProductList.Service",
+        "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Service\\MyProductList.Service.csproj",
+        "packagesPath": "C:\\Users\\Duhan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Duhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Data\\MyProductList.Data.csproj": {
+                "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Data\\MyProductList.Data.csproj"
+              },
+              "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Dto\\MyProductList.Dto.csproj": {
+                "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Dto\\MyProductList.Dto.csproj"
+              },
+              "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.ViewModel\\MyProductList.ViewModel.csproj": {
+                "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.ViewModel\\MyProductList.ViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.27.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.ViewModel\\MyProductList.ViewModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.ViewModel\\MyProductList.ViewModel.csproj",
+        "projectName": "MyProductList.ViewModel",
+        "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.ViewModel\\MyProductList.ViewModel.csproj",
+        "packagesPath": "C:\\Users\\Duhan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.ViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Duhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Data\\MyProductList.Data.csproj": {
+                "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Data\\MyProductList.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList\\MyProductList.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList\\MyProductList.csproj",
+        "projectName": "MyProductList",
+        "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList\\MyProductList.csproj",
+        "packagesPath": "C:\\Users\\Duhan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Duhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Service\\MyProductList.Service.csproj": {
+                "projectPath": "C:\\Users\\Duhan\\source\\repos\\MyProductList\\MyProductList.Service\\MyProductList.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

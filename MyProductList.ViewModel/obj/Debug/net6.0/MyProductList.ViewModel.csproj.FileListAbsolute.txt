@@ -1,0 +1,17 @@
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\bin\Debug\net6.0\MyProductList.ViewModel.deps.json
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\bin\Debug\net6.0\MyProductList.ViewModel.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\bin\Debug\net6.0\MyProductList.ViewModel.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\obj\Debug\net6.0\MyProductList.ViewModel.csproj.AssemblyReference.cache
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\obj\Debug\net6.0\MyProductList.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\obj\Debug\net6.0\MyProductList.ViewModel.AssemblyInfoInputs.cache
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\obj\Debug\net6.0\MyProductList.ViewModel.AssemblyInfo.cs
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\obj\Debug\net6.0\MyProductList.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\obj\Debug\net6.0\MyProductList.ViewModel.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\obj\Debug\net6.0\refint\MyProductList.ViewModel.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\obj\Debug\net6.0\MyProductList.ViewModel.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\obj\Debug\net6.0\ref\MyProductList.ViewModel.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\bin\Debug\net6.0\MyProductList.Base.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\bin\Debug\net6.0\MyProductList.Data.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\bin\Debug\net6.0\MyProductList.Data.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\bin\Debug\net6.0\MyProductList.Base.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.ViewModel\obj\Debug\net6.0\MyProductList.ViewModel.csproj.CopyComplete

@@ -1,0 +1,15 @@
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\bin\Debug\net6.0\MyProductList.Data.deps.json
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\bin\Debug\net6.0\MyProductList.Data.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\bin\Debug\net6.0\MyProductList.Data.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\bin\Debug\net6.0\MyProductList.Base.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\bin\Debug\net6.0\MyProductList.Base.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\obj\Debug\net6.0\MyProductList.Data.csproj.AssemblyReference.cache
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\obj\Debug\net6.0\MyProductList.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\obj\Debug\net6.0\MyProductList.Data.AssemblyInfoInputs.cache
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\obj\Debug\net6.0\MyProductList.Data.AssemblyInfo.cs
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\obj\Debug\net6.0\MyProductList.Data.csproj.CoreCompileInputs.cache
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\obj\Debug\net6.0\MyProductList.Data.csproj.CopyComplete
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\obj\Debug\net6.0\MyProductList.Data.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\obj\Debug\net6.0\refint\MyProductList.Data.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\obj\Debug\net6.0\MyProductList.Data.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Data\obj\Debug\net6.0\ref\MyProductList.Data.dll

@@ -1,0 +1,17 @@
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\bin\Debug\net6.0\MyProductList.Dto.deps.json
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\bin\Debug\net6.0\MyProductList.Dto.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\bin\Debug\net6.0\MyProductList.Dto.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\bin\Debug\net6.0\MyProductList.Base.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\bin\Debug\net6.0\MyProductList.Data.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\bin\Debug\net6.0\MyProductList.Base.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\bin\Debug\net6.0\MyProductList.Data.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\obj\Debug\net6.0\MyProductList.Dto.csproj.AssemblyReference.cache
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\obj\Debug\net6.0\MyProductList.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\obj\Debug\net6.0\MyProductList.Dto.AssemblyInfoInputs.cache
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\obj\Debug\net6.0\MyProductList.Dto.AssemblyInfo.cs
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\obj\Debug\net6.0\MyProductList.Dto.csproj.CoreCompileInputs.cache
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\obj\Debug\net6.0\MyProductList.Dto.csproj.CopyComplete
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\obj\Debug\net6.0\MyProductList.Dto.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\obj\Debug\net6.0\refint\MyProductList.Dto.dll
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\obj\Debug\net6.0\MyProductList.Dto.pdb
+C:\Users\Duhan\source\repos\MyProductList\MyProductList.Dto\obj\Debug\net6.0\ref\MyProductList.Dto.dll
