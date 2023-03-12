@@ -35,7 +35,7 @@ new MongoClient(builder.Configuration.GetValue<string>("ShopListMongoDatabaseSet
 builder.Services.AddScoped<IShopListMongoService, ShopListMongoService>();
 
 
-builder.Services.AddSingleton(typeof(IBackgroundTaskQueue<ShopListDto>), typeof(IsCompletedCheckQueue));
+builder.Services.AddSingleton(typeof(IBackgroundTaskQueue<ShopList>), typeof(IsCompletedCheckQueue));
 
 builder.Services.AddHostedService<QueueHostedService>();
 

@@ -88,6 +88,19 @@ namespace MyProductList.Service.Concrete
             return shopList;
         }
 
+        public async Task<ShopList> GetSingleShopListByIdAsyncForMongo(int id, int userId)
+        {
+            var tempEntity = await shopListRepository.GetByIdAsyncWithProductsAsync(id, userId);
+
+            if (tempEntity is null)
+                throw new InvalidOperationException("shopList not found");
+
+
+
+
+            return tempEntity;
+        }
+
         public async Task AddProductToShopList(int userId, AddProductToShopListDto newProduct)
         {
             var tempEntity = await genericRepository.GetByIdAsync(newProduct.ShopListId);
@@ -108,7 +121,7 @@ namespace MyProductList.Service.Concrete
             await unitOfWork.CompleteAsync();
         }
 
-        public async Task CheckIsCompleteColumnForShopList(ShopListDto shopList)
+        public async Task CheckIsCompleteColumnForShopList(ShopList shopList)
         {
             if (shopList.IsComplete is true)
                 throw new InvalidOperationException("this list already completed");
@@ -117,7 +130,8 @@ namespace MyProductList.Service.Concrete
 
             //ShopList dto = mapper.Map<ShopList>(shopList);
 
-            //genericRepository.Update(dto);
+            genericRepository.Update(shopList);
+            await unitOfWork.CompleteAsync();
         }
         
         public async Task GetAllShopListWithProducts(AddProductToShopListDto newProduct)

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Server.IIS.Core;
 using MyProductList.Data.Models;
+using MyProductList.Data.Repository.Abstract;
 using MyProductList.Dto.Dtos;
 using MyProductList.Queues;
 using MyProductList.Service.Abstract;
@@ -14,12 +15,14 @@ namespace MyProductList.Controllers
     public class ShopListController : ControllerBase
     {
         private readonly IShopListService _shopListService;
-        private readonly IBackgroundTaskQueue<ShopListDto> _queue;
+        private readonly IBackgroundTaskQueue<ShopList> _queue;
+        private readonly IShopListMongoService _shopListMongoService;
 
-        public ShopListController(IShopListService shopListService, IBackgroundTaskQueue<ShopListDto> queue)
+        public ShopListController(IShopListService shopListService, IBackgroundTaskQueue<ShopList> queue, IShopListMongoService shopListMongoService)
         {
             _shopListService = shopListService;
             _queue = queue;
+            _shopListMongoService = shopListMongoService;
         }
 
         [HttpGet]
@@ -117,7 +120,7 @@ namespace MyProductList.Controllers
         {
             var userId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
 
-            var shopList = await _shopListService.GetSingleShopListByIdAsync(shopListId, userId);
+            var shopList = await _shopListService.GetSingleShopListByIdAsyncForMongo(shopListId, userId);
 
             await _shopListService.CheckIsCompleteColumnForShopList(shopList);
 
@@ -125,6 +128,16 @@ namespace MyProductList.Controllers
 
 
             return Ok();
+        }
+
+        [HttpGet("GetShopListCompleted")]
+        [Authorize(Roles = "User")]
+        public async Task<IActionResult> GetShopListCompleted()
+        {
+            var shopList = _shopListMongoService.Get();
+
+
+            return Ok(shopList);
         }
 
         [HttpPut]

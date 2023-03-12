@@ -15,8 +15,9 @@ namespace MyProductList.Data.Repository.Concrete
         }
         public ShopListMongo Create(ShopListMongo shopListMongo)
         {
-            _shopList.InsertOne(shopListMongo); 
-           
+
+            _shopList.InsertOne(shopListMongo);
+
             return shopListMongo;
         }
 

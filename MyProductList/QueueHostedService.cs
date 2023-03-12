@@ -8,11 +8,11 @@ namespace MyProductList
 {
     public class QueueHostedService : BackgroundService
     {
-        private readonly IBackgroundTaskQueue<ShopListDto> queue;
+        private readonly IBackgroundTaskQueue<ShopList> queue;
         private readonly IMapper mapper;
         private readonly IShopListMongoService shopListMongoService;
 
-        public QueueHostedService(IBackgroundTaskQueue<ShopListDto> queue, IMapper mapper, IServiceScopeFactory factory)
+        public QueueHostedService(IBackgroundTaskQueue<ShopList> queue, IMapper mapper, IServiceScopeFactory factory)
         {
             this.queue = queue;
              shopListMongoService = factory.CreateScope().ServiceProvider.GetRequiredService<IShopListMongoService>();
@@ -27,6 +27,11 @@ namespace MyProductList
                 await Task.Delay(1000);
 
                 ShopListMongo dto = mapper.Map<ShopListMongo>(name);
+
+                var shopList = shopListMongoService.GetShop(name.Id.ToString());
+
+                if (shopList is not null)
+                    throw new InvalidOperationException("this shoplist already added");
 
                 shopListMongoService.Create(dto);
 

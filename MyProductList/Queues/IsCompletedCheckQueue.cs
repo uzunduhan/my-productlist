@@ -1,11 +1,12 @@
-﻿using MyProductList.Dto.Dtos;
+﻿using MyProductList.Data.Models;
+using MyProductList.Dto.Dtos;
 using System.Threading.Channels;
 
 namespace MyProductList.Queues
 {
-    public class IsCompletedCheckQueue : IBackgroundTaskQueue<ShopListDto>
+    public class IsCompletedCheckQueue : IBackgroundTaskQueue<ShopList>
     {
-        private readonly Channel<ShopListDto> queue;
+        private readonly Channel<ShopList> queue;
 
         public IsCompletedCheckQueue(IConfiguration configuration)
         {
@@ -16,16 +17,16 @@ namespace MyProductList.Queues
                 FullMode = BoundedChannelFullMode.Wait
             };
 
-            queue = Channel.CreateBounded<ShopListDto>(options);
+            queue = Channel.CreateBounded<ShopList>(options);
         }
-        public async Task AddQueue(ShopListDto workItem)
+        public async Task AddQueue(ShopList workItem)
         {
             ArgumentNullException.ThrowIfNull(workItem);
 
             await queue.Writer.WriteAsync(workItem);
         }
 
-        public ValueTask<ShopListDto> Dequeue(CancellationToken cancellationToken)
+        public ValueTask<ShopList> Dequeue(CancellationToken cancellationToken)
         {
             var workItem = queue.Reader.ReadAsync(cancellationToken);
 

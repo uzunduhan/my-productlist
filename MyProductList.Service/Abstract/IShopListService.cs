@@ -1,4 +1,5 @@
-﻿using MyProductList.Dto.Dtos;
+﻿using MyProductList.Data.Models;
+using MyProductList.Dto.Dtos;
 using MyProductList.ViewModel.ViewModels.ShopList;
 
 namespace MyProductList.Service.Abstract
@@ -13,6 +14,7 @@ namespace MyProductList.Service.Abstract
         Task AddShopListAsync(int userId, ShopListDto updateResource);
         Task AddProductToShopList(int userId, AddProductToShopListDto newProduct);
         Task RemoveProductToShopList(int userId, AddProductToShopListDto newProduct);
-        Task CheckIsCompleteColumnForShopList(ShopListDto shopList);
+        Task CheckIsCompleteColumnForShopList(ShopList shopList);
+        Task<ShopList> GetSingleShopListByIdAsyncForMongo(int id, int userId);
     }
 }
